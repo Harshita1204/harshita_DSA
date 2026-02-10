@@ -127,4 +127,7 @@ Here:
 - names are different
 - no confusion
 - this is optional
+<<<<<<< HEAD
 
+=======
+>>>>>>> 83bc7eeebf6f550a0f6c70b84bd66e228825ee78

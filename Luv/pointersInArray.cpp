@@ -19,4 +19,8 @@ int main(){
     int i=3;
     cout<<i[arr]<<endl; // you can write in this way also , it wont throw any error
     return 0;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 83bc7eeebf6f550a0f6c70b84bd66e228825ee78
