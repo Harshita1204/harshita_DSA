@@ -86,8 +86,3 @@ int main(){
      insertAtPosition(head,3,234);
      print(head);
     return 0;
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> 83bc7eeebf6f550a0f6c70b84bd66e228825ee78
