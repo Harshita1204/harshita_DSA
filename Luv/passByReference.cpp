@@ -3,7 +3,7 @@ using namespace std;
 void update(int n){
     n++;
 }
-void update2(int& n){   // pass by reference
+void update2(int& n){   // pass by reference 
     n++;
 }
 int main(){
