@@ -54,6 +54,7 @@ int main(){
      st.push(43);
      st.push(34);
      st.push(56);
+
      cout<<st.peek()<<endl;
      st.pop();
      cout<<st.peek()<<endl;
@@ -61,5 +62,6 @@ int main(){
      cout<<st.peek()<<endl;
      st.pop();
      cout<<st.peek()<<endl;
+     
      return 0;
 }
