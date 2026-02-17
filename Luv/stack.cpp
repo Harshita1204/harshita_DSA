@@ -4,18 +4,18 @@ using namespace std;
 class Stack{
     // properties
     public:
-    int *arr;
+    int *arr; // allows dynamic memory allocation
     int top;
     int size;
 
     // behavior
     Stack(int size){
-        this->size=size;
-        arr=new int[size];
+        this->size=size; 
+        arr=new int[size]; // new allocated memory in heap memory, it returns the address of first element, that address is stored in pointer arr
         top=-1;
     }
     void push(int element){
-        if(size-top>1){
+        if(size-top>1){ // if top == size-1 , stack is full
             top++;
             arr[top]=element;
         }
