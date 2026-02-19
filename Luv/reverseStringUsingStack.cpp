@@ -21,7 +21,7 @@ int main(){
         ans.push_back(ch);     // Add to answer string
         s.pop();               // Remove from stack
     }
-    
+
     cout << "Answer is : " << ans << endl;
 
     return 0;
