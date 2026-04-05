@@ -17,7 +17,6 @@ bool isPossible(vector<int>& stalls, int k, int mid) {
     }
     return false;
 }
-
 // Main function
 int aggressiveCows(vector<int>& stalls, int k) {
 
