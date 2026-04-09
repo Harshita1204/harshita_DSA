@@ -3,3 +3,14 @@
 *.obj
 build/
 .vscode/
+
+# C++ build files
+*.ilk
+*.pdb
+*.exe
+*.out
+
+
+# Mac / Windows
+.DS_Store
+Thumbs.db
