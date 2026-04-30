@@ -3,7 +3,7 @@
 #include<queue>
 using namespace std;
 
-vector<int> kahnTopoSort(int v, vector<int>adj[]){
+vector<int> kahnTopoSort(int v, vector<vector<int>>& adj){
     //create indegree array
     vector<int>indegree(v,0);
 
@@ -41,15 +41,15 @@ vector<int> kahnTopoSort(int v, vector<int>adj[]){
         }
     }
     // check cycle 
-    if(topo.size()!=v){
+    if(topo.size() != adj.size()){
         cout<<"cycle detected! topological sort is not possible";
         return{}; // returning an empty vector
     }
     return topo;
 }
 int main(){
-    int v= 6;
-    vector<int>adj[v];
+   int v = 6;
+   vector<vector<int>> adj(v);
 
     //example graph
     adj[5].push_back(2);
@@ -61,9 +61,9 @@ int main(){
 
     vector<int> result = kahnTopoSort(v,adj);
 
-    cout<<"topological sort";
+    cout<<"topological sort"<<endl;
     for(auto x:result){
-        cout<<"x"<<" ";
+        cout<<x<<" ";
     }
     return 0;
 }
