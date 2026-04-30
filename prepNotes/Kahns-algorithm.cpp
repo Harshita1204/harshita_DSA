@@ -64,6 +64,7 @@ int main(){
     cout<<"topological sort"<<endl;
     for(auto x:result){
         cout<<x<<" ";
+        
     }
     return 0;
 }
