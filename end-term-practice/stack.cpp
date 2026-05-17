@@ -9,58 +9,57 @@ class Stack {
     int top;
 
     public:
-
-    Stack() {
-        top = -1;
+    Stack() { // constructor
+        top = -1; // initially stack is empty
     }
 
     // Push Operation
     void push(int value) {
 
-        if(top == SIZE - 1) {
+        if(top == SIZE - 1) { // checks if stack is full
             cout << "Stack Overflow" << endl;
             return;
         }
 
-        top++;
-        arr[top] = value;
+        top++; // increase top position
+        arr[top] = value; // insert value at top position
 
         cout << value << " inserted" << endl;
     }
 
-    // Pop Operation
+    // Pop Operation -> removes top element
     void pop() {
 
-        if(top == -1) {
-            cout << "Stack Underflow" << endl;
+        if(top == -1) { // check if stack is empty 
+            cout << "Stack Underflow" << endl; 
             return;
         }
-
-        cout << arr[top] << " deleted" << endl;
+      // print deleted element
+        cout << arr[top] << " deleted" << endl; 
         top--;
     }
 
-    // Peek Operation
+    // Peek Operation -> displays top element
     void peek() {
-
+        // checks if stack is empty
         if(top == -1) {
             cout << "Stack Empty";
             return;
         }
-
+        // print top element
         cout << "Top Element: " << arr[top] << endl;
     }
 
-    // Display Stack
+    // Display Stack -> shows all stack operations
     void display() {
-
+        // checks if the stack is empty
         if(top == -1) {
             cout << "Stack Empty";
             return;
         }
 
         cout << "Stack Elements:" << endl;
-
+        // print the elements from top to bottom
         for(int i = top; i >= 0; i--) {
             cout << arr[i] << endl;
         }
@@ -68,7 +67,7 @@ class Stack {
 };
 
 int main() {
-
+   // stack object
     Stack s;
 
     s.push(10);
