@@ -8,7 +8,6 @@ struct node{
 int main(){
     int item,n,i;
     node *ptr,*start;
-    
     cout<<"Enter the number of nodes";
     cin>>n;
     ptr = new node;
