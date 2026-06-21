@@ -1,7 +1,7 @@
 ```cpp
 class Solution {
 public:
-    int findPeakElement(vector<int>& arr) {
+    int findPeakElement(vector<int>& arr) { find the greatest element
         int left = 0;
         int right = arr.size()-1;
         while(left<right){
