@@ -23,7 +23,7 @@ public:
  
  2 vs 1 -> cancel 
  2 vs 1 -> cancel
- 2 -> still survives
+ 2 -> still survives -> majority element will survive
 
  - the majority element can't be completely eliminated because there are 
   more of it than the others combined .
