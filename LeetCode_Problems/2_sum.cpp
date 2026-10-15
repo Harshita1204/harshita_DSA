@@ -9,8 +9,6 @@ int main() {
     for(int i = 0; i < n; i++) {
         cin >> arr[i];
     }
-
-    
     unordered_map<int, int> mp;
     for(int i = 0; i < n; i++) {
         int need = target - arr[i];
@@ -19,6 +17,7 @@ int main() {
             return 0;
         }
        mp[arr[i]] = i;
+       
     }
     cout << -1;
 }
