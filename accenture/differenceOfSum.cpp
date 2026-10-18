@@ -8,6 +8,7 @@ int differenceofSum(int n, int m)
         if (i % n == 0)
         {
             sum1 = sum1 + i;
+            
         }
         else
         {
