@@ -23,8 +23,7 @@ int main()
     int n, m;
     int result;
     cin >> n >> m;
-    
-    result = differenceofSum(n, m);
+        result = differenceofSum(n, m);
     cout << result;
     return 0;
 }
